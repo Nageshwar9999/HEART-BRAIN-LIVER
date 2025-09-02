@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEART AND LIVER CIRRHOSIS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: #333;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    .header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: flex;
+      width: 100%;
+      flex: 1;
+    }
+    .gallery-item {
+      flex: 1; /* each item takes half the width */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* center vertically in half */
+    }
+    .circle-container {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .circle-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .circle-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-item label {
+      font-size: 1em;
+      text-align: center;
+      margin-top: 8px;
+      color: #333;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.5em;
+      }
+      .circle-container {
+        width: 150px;
+        height: 150px;
+      }
+      .gallery {
+        flex-direction: column;
+      }
+      .gallery-item {
+        flex: none;
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>BRAIN STROKE DETECTION USING CNN ON MRI/CT SCANS WITH</h2>
+    <h2>MACHINE LEARNING-BASED PREDICTION OF HEART AND LIVER DISEASES.</h2>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <div class="circle-container">
+        <a href="https://heart-wnu7.onrender.com/">
+          <img src="static/images/Heart.jpg" alt="Image 1"/>
+        </a>
+      </div>
+      <label>Heart</label>
+    </div>
+
+    <div class="gallery-item">
+      <div class="circle-container">
+        <a href="https://liver-ap0d.onrender.com/">
+          <img src="static/images/liver_cirrhosis_prediction.jpg" alt="Image 2"/>
+        </a>
+      </div>
+      <label>Liver</label>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+      <div class="circle-container">
+        <a href="https://liver-ap0d.onrender.com/">
+          <img src="static/images/brain.jpeg" alt="Image 3"/>
+        </a>
+      </div>
+      <label>Brain</label>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Diagnosis Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>
